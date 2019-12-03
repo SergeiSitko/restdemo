@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/ZmitrocC/ZmitrocC" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ah-mobile/ecommerce-appie-android-tablet" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/androidtask" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/arcore-android-sdk" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/beauty/beauty" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fauna-helper" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/javase" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/warmup" vcs="Git" />
+  </component>
+</project>

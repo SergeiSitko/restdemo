@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="blueyGrey">#9EA7B7</color>
+
+
+
+
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="transparent_wurmup">#DDFFFFFF</color>
+
+    <color name="grey">#FF9EA7B7</color>
+
+    <color name="crimson">#E20F15</color>
+    <color name="cardinal">#C91F24</color>
+
+    <color name="transparent">@android:color/transparent</color>
+    <color name="white_transparent">#33FFFFFF</color>
+    <color name="white_transparent_50">#7fffffff</color>
+
+    <color name="fbColor">#4267B2</color>
+    <color name="fbColor_transparent">#884267B2</color>
+    <color name="cloudyBlue">#BDC4D1</color>
+    <color name="cloudyBlueTwo">#C7D1DE</color>
+    <color name="greyishBrown">#585858</color>
+
+    <color name="paleGrey">#E8EAF1</color>
+    <color name="paleGreyTwo">#F8F9FC</color>
+    <color name="paleGreyFour">#E5E5EA</color>
+    <color name="paleGreyThree">#DFE3EB</color>
+    <color name="paleGreyFive">#E5EDF8</color>
+    <color name="lightBlueGrey">#DDE8F6</color>
+    <color name="iron">#DADEE0</color>
+    <color name="blackout">#80000000</color>
+
+    <!--category border colors-->
+    <color name="hair">#85D2FF</color>
+    <color name="hair_removal">#FFAFAF</color>
+    <color name="skin_care">#CFEFA6</color>
+    <color name="make_up">#E4C5FF</color>
+    <color name="eyebrows">#FFF28A</color>
+    <color name="nails">#FFD8AE</color>
+    <color name="hair_pale">#ECF8FF</color>
+    <color name="hair_removal_pale">#FFECEC</color>
+    <color name="skin_care_pale">#F1FFDF</color>
+    <color name="make_up_pale">#F6ECFF</color>
+    <color name="eyebrows_pale">#FFFAD4</color>
+    <color name="nails_pale">#FFF3E2</color>
+
+    <color name="currentMonthDayColor">#de000000</color>
+    <color name="daysLabelColor">#8A000000</color>
+    <color name="defaultColor">#2962FF</color>
+    <color name="disabledDialogButtonColor">#1F000000</color>
+    <color name="itemHighlightColor">#1F000000</color>
+    <color name="nextMonthDayColor">#1F000000</color>
+
+    <color name="oceanGreen">#4ab486</color>
+    <color name="subservice_divider_color">#E1EBF6</color>
+
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RestApp</string>
+    <string name="email">Email</string>
+    <string name="hint_mail">Type email</string>
+    <string name="password">Password</string>
+    <string name="hint_password">Type password</string>
+    <string name="log_in">Sign in</string>
+    <string name="no_internet">Нет интернета</string>
+    <string name="email_bad">Email is bad</string>
+    <string name="password_bad">Password is bad</string>
+    <string name="fail">Fail</string>
+</resources>
