@@ -4,7 +4,7 @@ import by.android.base.manager.NetworkManager
 import by.android.base.manager.ResourceManager
 import by.sitko.restapp.R
 import by.sitko.restapp.api.ApiInterface
-import by.sitko.restapp.api.AuthRequest
+import by.sitko.restapp.api.AuthBody
 import by.sitko.restapp.base.BaseViewModel
 import by.sitko.restapp.base.SingleLiveEvent
 import by.sitko.restapp.manager.ToastManager
@@ -25,10 +25,14 @@ class LoginViewModel(
       private val resourceManager: ResourceManager
 ) : BaseViewModel() {
 
-    val moveToMainScreen = SingleLiveEvent<Unit>()
+    val moveToProfileScreen = SingleLiveEvent<Unit>()
 
     var mail = EMPTY
     var password = EMPTY
+
+    init {
+        if (passwordManager.isUserLogged()) moveToProfileScreen.value = Unit
+    }
 
 
     override val exceptionHandler = CoroutineExceptionHandler { coroutineContext, throwable ->
@@ -55,7 +59,7 @@ class LoginViewModel(
         modelScope.launch {
             loadingData.value = true
 
-            val loginRequest = AuthRequest(mail, password)
+            val loginRequest = AuthBody(mail, password)
 
             try {
                 withContext(Dispatchers.IO) {
@@ -66,7 +70,7 @@ class LoginViewModel(
                     passwordManager.saveToken(token)
                 }
 
-                moveToMainScreen.postValue(Unit)
+                moveToProfileScreen.postValue(Unit)
 
             } catch (e: Exception) {
                 toastManager.showMessage(e.message ?: resourceManager.getString(R.string.fail))

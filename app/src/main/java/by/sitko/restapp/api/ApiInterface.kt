@@ -2,6 +2,7 @@ package by.sitko.restapp.api
 
 import kotlinx.coroutines.Deferred
 import retrofit2.http.Body
+import retrofit2.http.GET
 import retrofit2.http.POST
 
 private const val API_KEY = "bJHiLNfwe864HJMrmMtVJtv34"
@@ -9,7 +10,17 @@ private const val API_KEY = "bJHiLNfwe864HJMrmMtVJtv34"
 interface ApiInterface {
 
     @POST("accounts/auth")
-    fun auth(@Body authRequest: AuthRequest): Deferred<LoginResponse>
+    fun auth(@Body authBody: AuthBody): Deferred<LoginResponse>
+
+    @POST("sessions/refresh")
+    fun refreshToken(): Deferred<LoginResponse>
+
+    @GET("accounts/current")
+    fun getProfile(): Deferred<ProfileResponse>
+
+    @POST("/accounts/sessions/end")
+    fun logOut(@Body logOutBody: LogOutBody): Deferred<Unit>
+
 
     /*@GET("/picker_api/getProduct")
     fun getProduct(

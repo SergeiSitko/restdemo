@@ -9,6 +9,7 @@ import by.android.base.manager.ResourceManager.ImpResourceManager
 import by.sitko.restapp.api.ApiInterface
 import by.sitko.restapp.manager.ToastManager
 import by.sitko.restapp.ui.login.LoginViewModel
+import by.sitko.restapp.ui.profile.ProfileViewModel
 import by.zmitrocc.shop.manager.PasswordManager
 import by.zmitrocc.shop.manager.PasswordManager.Impl
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
@@ -32,6 +33,7 @@ val managerModule = module {
 
 val viewModels = module {
     viewModel { LoginViewModel(get(), get(), get(), get(), get()) }
+    viewModel { ProfileViewModel(get(), get(), get(), get(), get()) }
 }
 
 val apiModule = module {
@@ -44,7 +46,7 @@ val apiModule = module {
                 chain
                     .request()
                     .newBuilder()
-                    .addHeader("X-Access-Token", passwordManager.getToken())
+                    .addHeader("Authorization", passwordManager.getToken())
                     .build()
             chain.proceed(request)
         }

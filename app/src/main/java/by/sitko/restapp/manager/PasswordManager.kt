@@ -15,6 +15,8 @@ interface PasswordManager {
     fun clearToken()
     fun getToken(): String
     fun validateMailAndPassword(mail: String, password: String): Boolean
+    fun getSession(): String
+    fun saveSession(session: String)
 
     class Impl(context: Context) : PasswordManager {
 
@@ -27,6 +29,13 @@ interface PasswordManager {
         }
 
         override fun getToken() = shar.getString(KEY_TOKEN, EMPTY) ?: EMPTY
+
+        override fun getSession(): String {
+            return EMPTY
+        }
+
+        override fun saveSession(session: String) {
+        }
 
         override fun validateMailAndPassword(mail: String, password: String): Boolean =
               mail == valid_email && password == valid_password

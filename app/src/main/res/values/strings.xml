@@ -9,4 +9,7 @@
     <string name="email_bad">Email is bad</string>
     <string name="password_bad">Password is bad</string>
     <string name="fail">Fail</string>
+    <string name="logOut">Log Out</string>
+    <string name="are_you_sure_log_out">Уверены, что хотитет выйти из аккаунта?</string>
+    <string name="no_prifile_data">No profile data</string>
 </resources>
